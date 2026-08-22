@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <defs>
+    <!-- Gradient for '4' -->
+    <linearGradient id="grad-four" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="35%" stop-color="#1e3a8a" />
+      <stop offset="70%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Gradient for 'U' -->
+    <linearGradient id="grad-u" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764" />
+      <stop offset="30%" stop-color="#7e22ce" />
+      <stop offset="70%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Number 4 with transparent background -->
+  <g filter="url(#subtle-shadow)">
+    <path 
+      d="M172 170 L72 315 L172 315 Z M208 170 L208 315 L236 315 L236 376 L208 376 L208 440 L152 440 L152 376 L40 376 L40 310 L152 145 L208 145 Z" 
+      fill="url(#grad-four)" 
+    />
+  </g>
+
+  <!-- Letter U with transparent background -->
+  <g filter="url(#subtle-shadow)">
+    <path 
+      d="M250 170 L306 170 L306 320 C306 362 336 388 375 388 C414 388 444 362 444 320 L444 205 L500 205 L500 320 C500 395 448 444 375 444 C302 444 250 395 250 320 Z" 
+      fill="url(#grad-u)" 
+    />
+  </g>
+
+  <!-- Graduation Cap and Lightbulb atop right pillar of U -->
+  <g transform="translate(472, 140) scale(0.95)" filter="url(#subtle-shadow)">
+    <!-- Lightbulb -->
+    <!-- Bulb Glass -->
+    <path 
+      d="M0 -75 C-26 -75 -42 -55 -42 -30 C-42 -12 -30 2 -20 16 L-20 30 L20 30 L20 16 C30 2 42 -12 42 -30 C42 -55 26 -75 0 -75 Z" 
+      fill="none" 
+      stroke="#1e3a8a" 
+      stroke-width="7" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+    />
+    
+    <!-- Bulb Filament -->
+    <path 
+      d="M-12 10 L-12 -22 C-12 -32 -6 -38 0 -38 C6 -38 12 -32 12 -22 L12 10" 
+      fill="none" 
+      stroke="#2563eb" 
+      stroke-width="5" 
+      stroke-linecap="round" 
+    />
+    <path 
+      d="M-7 -10 L7 -10" 
+      stroke="#2563eb" 
+      stroke-width="5" 
+      stroke-linecap="round" 
+    />
+
+    <!-- Bulb Screw Base -->
+    <path 
+      d="M-16 34 L16 34 M-13 42 L13 42 M-9 50 L9 50" 
+      stroke="#1e3a8a" 
+      stroke-width="5" 
+      stroke-linecap="round" 
+    />
+
+    <!-- Graduation Mortarboard (Cap) -->
+    <!-- Cap Diamond Top -->
+    <polygon 
+      points="0,35 72,58 0,81 -72,58" 
+      fill="#ffffff" 
+      fill-opacity="0.05"
+      stroke="#1e3a8a" 
+      stroke-width="7" 
+      stroke-linejoin="round" 
+    />
+
+    <!-- Cap Skull Base -->
+    <path 
+      d="M-40 68 C-40 92 40 92 40 68" 
+      fill="none" 
+      stroke="#1e3a8a" 
+      stroke-width="7" 
+      stroke-linecap="round" 
+    />
+    <path 
+      d="M-36 78 C-36 100 36 100 36 78" 
+      fill="none" 
+      stroke="#2563eb" 
+      stroke-width="4.5" 
+      stroke-linecap="round" 
+    />
+
+    <!-- Tassel Button & String -->
+    <circle cx="0" cy="58" r="4.5" fill="#1e3a8a" />
+    <path 
+      d="M0 58 Q48 68 58 92" 
+      fill="none" 
+      stroke="#1e3a8a" 
+      stroke-width="5" 
+      stroke-linecap="round" 
+    />
+    <!-- Tassel Fringe -->
+    <rect x="54" y="92" width="9" height="18" rx="3" fill="#1e3a8a" />
+  </g>
+</svg>
