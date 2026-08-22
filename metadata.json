@@ -1,0 +1,6 @@
+{
+  "name": "DSAT Math Question Bank & Practice Exams",
+  "description": "Comprehensive extractor, interactive multi-test engine, Desmos calculator shortcuts, and detailed step-by-step solutions for Digital SAT Math exams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
