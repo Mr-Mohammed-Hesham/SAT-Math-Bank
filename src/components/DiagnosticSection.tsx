@@ -151,12 +151,17 @@ export const DiagnosticSection: React.FC<DiagnosticSectionProps> = ({ onOpenDesm
           {/* Embedded Test Iframe Container */}
           <div className="flex-1 relative bg-slate-950">
             {isLoadingIframe && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/90 z-10 gap-3">
-                <div className="w-10 h-10 border-4 border-indigo-500/20 border-t-indigo-500 rounded-full animate-spin"></div>
-                <div className="text-center space-y-1">
-                  <p className="text-sm font-bold text-slate-200">{t.diagLoadingTest}</p>
-                  <p className="text-xs text-slate-400 font-mono" dir="ltr">
-                    {activeTest.url}
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/95 z-20 gap-4 backdrop-blur-sm">
+                <div className="relative flex items-center justify-center">
+                  <div className="w-14 h-14 border-4 border-indigo-500/20 border-t-indigo-500 rounded-full animate-spin"></div>
+                  <div className="absolute w-8 h-8 border-4 border-cyan-400/20 border-b-cyan-400 rounded-full animate-spin [animation-direction:reverse]"></div>
+                </div>
+                <div className="text-center space-y-1.5 px-4">
+                  <p className="text-base font-bold text-white tracking-wide">
+                    {language === 'ar' ? '(جار تحضير الإمتحان)' : '(Preparing Exam...)'}
+                  </p>
+                  <p className="text-xs text-slate-400">
+                    {language === 'ar' ? 'يرجى الانتظار لحظات، يتم تجهيز بيئة الاختبار التفاعلية...' : 'Please wait a moment, loading interactive testing environment...'}
                   </p>
                 </div>
               </div>

@@ -7,8 +7,11 @@ export interface Translations {
   appTitle: string;
   appSubtitle: string;
   appBadge: string;
+  tabHome: string;
   tabDiagnostic: string;
   tabFullExams: string;
+  tabCalculator: string;
+  tabSimulator: string;
   btnQuizMode: string;
   btnDesmos: string;
   btnLangToggle: string;
@@ -126,10 +129,13 @@ export const translations: Record<Language, Translations> = {
   ar: {
     // Global & Header
     appTitle: 'منصة بنوك واختبارات Digital SAT Math',
-    appSubtitle: 'اختبارات تشخيصية بالمعايير تفتح داخل الصفحة، نماذج محاكاة رسمية، وحيل Desmos',
-    appBadge: '25 اختباراً تشخيصياً + 3 نماذج كاملة',
-    tabDiagnostic: 'الاختبارات التشخيصية (25)',
-    tabFullExams: 'النماذج الكاملة (3)',
+    appSubtitle: 'نماذج اختبارات كاملة محاكية، اختبارات تشخيصية لكل درس، وحاسبة Desmos المتطورة',
+    appBadge: '17 نموذجاً كاملاً + 25 اختباراً تشخيصياً',
+    tabHome: 'الرئيسية',
+    tabFullExams: 'نماذج كاملة محاكية (17)',
+    tabDiagnostic: 'اختبارات تشخيصية لكل درس (25)',
+    tabCalculator: 'الحاسبة',
+    tabSimulator: 'محاكي الاختبار',
     btnQuizMode: 'محاكي الامتحان',
     btnDesmos: 'حاسبة Desmos',
     btnLangToggle: 'English',
@@ -155,7 +161,7 @@ export const translations: Record<Language, Translations> = {
     diagDesmosHelperBtn: 'حاسبة Desmos المساعدة',
     diagReloadBtn: 'إعادة التحميل',
     diagFullscreenBtn: 'ملء الشاشة داخل الصفحة',
-    diagLoadingTest: 'جاري تحميل الاختبار التشخيصي التفاعلي...',
+    diagLoadingTest: '(جار تحضير الإمتحان)',
     diagEmbeddedNotice: 'الاختبار مفتوح مباشرة داخل المنصة',
     diagAuthorCredit: 'إعداد وتطوير: Mr. Mohammed Hesham',
     diagExitTest: 'إنهاء والعودة',
@@ -245,10 +251,13 @@ export const translations: Record<Language, Translations> = {
   en: {
     // Global & Header
     appTitle: '4U - Digital SAT Math Practice & Diagnostics Platform',
-    appSubtitle: 'Standardized in-page diagnostic tests, official mock exams, step-by-step solutions & Desmos shortcuts',
-    appBadge: '25 Diagnostic Tests + 3 Full Exams (132 Questions)',
+    appSubtitle: 'Full simulated mock exams, lesson-by-lesson diagnostic tests, and advanced Desmos tools',
+    appBadge: '17 Full Mocks + 25 Diagnostic Tests',
+    tabHome: 'Home',
+    tabFullExams: 'Full Mock Exams (17)',
     tabDiagnostic: 'Diagnostic Tests (25)',
-    tabFullExams: 'Full Practice Exams (3)',
+    tabCalculator: 'Calculator',
+    tabSimulator: 'Exam Simulator',
     btnQuizMode: 'Exam Simulator',
     btnDesmos: 'Desmos Calculator',
     btnLangToggle: 'العربية',
@@ -274,7 +283,7 @@ export const translations: Record<Language, Translations> = {
     diagDesmosHelperBtn: 'Desmos Helper Calculator',
     diagReloadBtn: 'Reload',
     diagFullscreenBtn: 'In-Page Fullscreen',
-    diagLoadingTest: 'Loading interactive diagnostic test...',
+    diagLoadingTest: '(Preparing Exam...)',
     diagEmbeddedNotice: 'Test embedded directly inside the platform',
     diagAuthorCredit: 'Prepared & Developed by: Mr. Mohammed Hesham',
     diagExitTest: 'Finish & Exit',
